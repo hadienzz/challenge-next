@@ -1,9 +1,9 @@
-const MealsPage = ()=>{
-return (
+const MealsPage = () => {
+  return (
     <div>
-        <h1>This is meals page</h1>
+      <h1>This is meals page</h1>
     </div>
-)
-}
+  );
+};
 
-export default MealsPage
+export default MealsPage;
