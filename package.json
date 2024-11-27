@@ -9,16 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.3"
-=======
     "better-sqlite3": "^11.6.0",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"
->>>>>>> fc290168e10ccd4f744aa771ef742e1f620dd85f
   },
   "devDependencies": {
     "eslint": "^8",
