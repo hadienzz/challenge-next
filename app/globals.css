@@ -13,17 +13,6 @@ body {
   background: radial-gradient(#282c34, #282c34);
 }
 
-<<<<<<< HEAD
-.header-background {
-  position: absolute;
-  width: 100%;
-  height: 320px;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-=======
->>>>>>> fc290168e10ccd4f744aa771ef742e1f620dd85f
 
 svg {
   display: block;

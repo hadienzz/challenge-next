@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-const CommunityPage = () => {
-    return (
-        <section>
-            <h1>This is Community Page</h1>
-        </section>
-    )
-}
-
-export default CommunityPage
-=======
 import Image from "next/image";
 
 import mealIcon from "@/assets/icons/meal.png";
@@ -49,4 +38,3 @@ export default function CommunityPage() {
     </>
   );
 }
->>>>>>> fc290168e10ccd4f744aa771ef742e1f620dd85f

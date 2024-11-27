@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-const MealPage = () => {
-    return (
-        <section>
-            <h1>this is meal page</h1>
-        </section>
-    )
-}
-
-export default MealPage
-=======
 import Link from "next/link";
 import classes from "./page.module.css";
 import MealsGrid from "@/components/meals/meals-grid";
 import { getMeals } from "@/lib/meals";
+import { Suspense } from "react";
+import MealsLoadingPage from "./loading";
 
 const MealsPage = async () => {
-  const meals = getMeals();
 
   return (
     <div>
@@ -32,11 +22,12 @@ const MealsPage = async () => {
         </p>
       </header>
       <main className={classes.section}>
-        <MealsGrid meals={meals} />
+        <Suspense fallback={<MealsLoadingPage />}>
+          <MealsGrid />
+        </Suspense>
       </main>
     </div>
   );
 };
 
 export default MealsPage;
->>>>>>> fc290168e10ccd4f744aa771ef742e1f620dd85f
