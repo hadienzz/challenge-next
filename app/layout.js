@@ -1,15 +1,24 @@
 import MainHeader from "@/components/main-header/main-header";
 import "./globals.css";
+<<<<<<< HEAD
 
 export const metadata = {
   title: "NextLevel Food",
   description: "Delicious meals, shared by a food-loving community.",
+=======
+import MainHeaderBackground from "@/components/main-header/main-header-background";
+
+export const metadata = {
+  title: "project had1n #01",
+  description: "The purpose of this project is to fulfill the portfolio",
+>>>>>>> fc290168e10ccd4f744aa771ef742e1f620dd85f
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+<<<<<<< HEAD
         <div className="header-background">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <defs>
@@ -31,6 +40,9 @@ export default function RootLayout({ children }) {
           </svg>
         </div>
 
+=======
+        <MainHeaderBackground />
+>>>>>>> fc290168e10ccd4f744aa771ef742e1f620dd85f
         <MainHeader />
         {children}
       </body>

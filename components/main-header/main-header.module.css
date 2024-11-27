@@ -57,7 +57,10 @@
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   font-size: 1.5rem;
+<<<<<<< HEAD
   outline: none;
+=======
+>>>>>>> fc290168e10ccd4f744aa771ef742e1f620dd85f
 }
 
 .logo img {
