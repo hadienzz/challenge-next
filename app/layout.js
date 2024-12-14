@@ -1,9 +1,11 @@
 import MainHeader from "@/components/main-header/main-header";
 import "./globals.css";
 import MainHeaderBackground from "@/components/main-header/main-header-background";
+import { generateMetadata } from "./meals/[mealsSlug]/page";
+
 
 export const metadata = {
-  title: "project had1n #01",
+  title: "All Meals",
   description: "The purpose of this project is to fulfill the portfolio",
 };
 

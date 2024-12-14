@@ -1,7 +1,21 @@
+
 import { getMeal } from "@/lib/meals";
 import { notFound, usePathname } from "next/navigation";
 import classes from "./page.module.css";
 import Image from "next/image";
+
+export async function generateMetadata({ params }) {
+  const meal = getMeal(params.mealsSlug)
+  if (!meal) {
+    notFound()
+  }
+
+  return {
+    title: meal.title,
+    description: meal.summary
+  }
+}
+
 
 const MealsDetailPage = async ({ params }) => {
   const { mealsSlug } = params;
@@ -10,7 +24,7 @@ const MealsDetailPage = async ({ params }) => {
   if (!meal) {
     notFound();
   }
-  
+
   return (
     <>
       <div className={classes.header}>
